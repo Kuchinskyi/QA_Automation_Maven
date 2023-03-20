@@ -1,12 +1,11 @@
 package lesson26;
 
 import org.hillel.homework.lesson26.WebDriverCash;
-import org.hillel.homework.lesson26.WebDriverFactory;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 
 public class WebDriverTest {
     private static WebDriver driver;
