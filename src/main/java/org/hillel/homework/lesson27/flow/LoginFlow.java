@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginFlow {
 
-    private LoginPage loginPage;
+    private final LoginPage loginPage;
 
     public LoginFlow(WebDriver driver) {
         loginPage = new LoginPage(driver);

@@ -15,7 +15,7 @@ public class LoginTest {
     @BeforeAll
     public static void init() {
         driver = WebDriverFactory.getDriver("chrome");
-        loginFlow = new LoginFlow (driver);
+        loginFlow = new LoginFlow(driver);
     }
 
     @BeforeEach
@@ -26,6 +26,7 @@ public class LoginTest {
     }
 
     @Test
+    @DisplayName ("Password Error")
     public void textErrorPasswordText() throws InterruptedException {
         loginFlow.setEmailAddressField("test@gmail.com");
         loginFlow.clickSubmitButton();
@@ -35,6 +36,7 @@ public class LoginTest {
     }
 
     @Test
+    @DisplayName ("Login Error")
     public void textErrorLoginText() throws InterruptedException {
         loginFlow.setEmailAddressField("dfdfdfdg");
         loginFlow.clickSubmitButton();
@@ -44,7 +46,7 @@ public class LoginTest {
     }
 
     @AfterEach
-    public void clean(){
+    public void clean() {
         driver.manage().deleteAllCookies();
     }
 

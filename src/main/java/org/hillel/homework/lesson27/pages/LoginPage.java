@@ -12,7 +12,7 @@ public class LoginPage extends AbstractPage {
     private static final By PASSWORD_FIELD = By.id("wcs_logon_password");
     private static final By SUBMIT_BUTTON = By.id("login_submit");
     private static final By PASSWORD_ERROR = By.xpath("//div[@class='password-field rb-fieldrow rb-fieldrow--required rb-invalidrow']/span");
-    private static final By EMAIL_ERROR = By.xpath("//div[@class='rb-fieldrow rb-fieldrow--required rb-invalidrow']/span");
+    private static final By EMAIL_ERROR = By.xpath("//div[@class='rb-fieldrow rb-fieldrow--required rb-floating rb-invalidrow']/span");
 
     public LoginPage(WebDriver driver) {
         super(driver);
